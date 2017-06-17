@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.butterfly.hackathon2017.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/editText_login"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000"
+            android:hint="@string/enter_login"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_login"
+            android:backgroundTint="#000"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textCursorDrawable="@null" />
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_password">
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#f00"
+                android:text="@string/login"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
